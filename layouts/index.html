@@ -17,7 +17,7 @@
                 <div class="col-span-6">
                     <div class="mx-auto w-full max-w-sm sm:max-w-md lg:max-w-lg hero-container">
                         {{/* Use Hugo's image processing for optimized responsive images */}}
-                        {{ $heroImage := resources.Get "images/flockcamera.jpg" }}
+                        {{ $heroImage := resources.Get "images/laserloon.png" }}
                         {{ if $heroImage }}
                             {{ $heroWebP := $heroImage.Resize "576x576 webp q85" }}
                             {{ $heroWebPSmall := $heroImage.Resize "320x320 webp q85" }}
@@ -34,7 +34,7 @@
                         {{ else }}
                             {{/* Fallback to static image */}}
                             <img 
-                                src="/images/flockcamera.jpg" 
+                                src="/images/laserloon.png" 
                                 alt="TailBliss Hero" 
                                 class="overflow-hidden mx-auto rounded-2xl shadow-xl hero-image"
                                 width="576" 
