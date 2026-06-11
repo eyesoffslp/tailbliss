@@ -172,7 +172,7 @@
                                 {{ .text }}
                             </p>
                             {{ end }}
-                            
+
                             {{ range .Site.Params.P3.Links }}
                             <div class="my-6">
                                 <a href="{{ .url }}" class="text-base font-medium text-primary-400 dark:text-primary-100">
@@ -215,9 +215,6 @@
             </div>
         </div>
     </div>
-
-    {{/* Newsletter signup section */}}
-    {{ partial "newsletter.html" . }}
 
 </main>
 {{ end }}
